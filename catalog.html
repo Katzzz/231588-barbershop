@@ -1,215 +1,220 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Барбершоп &#171;Бородинский&#187;</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<title>Барбершоп &#171;Бородинский&#187;</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
 
-    <header class="main-header">
-      <div class="container">
-        <div class="page-logo">
-          <a href="https://htmlacademy.ru/" title="Барбершоп &#171;Бородинский&#187;">
-            <img src="img/page-logo.png" width="170" height="71" alt="Барбершоп &#171;Бородинский&#187;">
-          </a>
-        </div>
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Прайс-лист</a>
-            </li>
-            <li>
-              <span class="active-btn-nav">Магазин</span>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="login" href="#">Вход</a>
-        </div>
-      </div>
-    </header>
+	<header class="main-header">
+		<div class="container clearfix">
+			<div class="page-logo">
+				<a href="https://htmlacademy.ru/" title="Барбершоп &#171;Бородинский&#187;">
+					<img src="img/page-logo.png" width="111" height="24" alt="Барбершоп &#171;Бородинский&#187;">
+				</a>
+			</div>
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Прайс-лист</a>
+					</li>
+					<li>
+						<span class="active-btn-nav">Магазин</span>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a>
+			</div>
+		</div>
+	</header>
 
-    <main class="container">
+	<main class="container">
 
-      <header class="page-header">
-        <h1>Средства для ухода</h1>
-        <ul class="breadcrumbs">
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
-          <li>
-            <span class="active-btn-breadcrumbs">Средства для ухода</span>
-          </li>
-        </ul>
-      </header>
+		<header class="page-header">
+			<h1>Средства для ухода</h1>
+			<ul class="breadcrumbs">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Магазин</a>
+				</li>
+				<li>
+					<span class="active-btn-breadcrumbs">Средства для ухода</span>
+				</li>
+			</ul>
+		</header>
 
-      <aside>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <h2>Производители</h2>
-          <ul class="sidebar">
-            <li>
-              <input type="checkbox" id="baxter" name="producer" checked>
-              <label for="baxter">Baxter of California</label>
-            </li>
-            <li>
-              <input type="checkbox" id="natty" name="producer">
-              <label for="natty">Mr Natty</label>
-            </li>
-            <li>
-              <input type="checkbox" id="suavecito" name="producer" checked>
-              <label for="suavecito">Suavecito</label>
-            </li>
-            <li>
-              <input type="checkbox" id="malin" name="producer">
-              <label for="malin">Malin+Goetz</label>
-            </li>
-            <li>
-              <input type="checkbox" id="murray" name="producer">
-              <label for="murray">Murray's</label>
-            </li>
-            <li>
-              <input type="checkbox" id="american" name="producer" checked>
-              <label for="american">American Crew</label>
-            </li>
-          </ul>
-          <h2>Группы товаров</h2>
-          <ul class="sidebar">
-            <li>
-              <input type="radio" id="razor" name="item-group">
-              <label for="razor">Бритвенные принадлежности</label>
-            </li>
-            <li>
-              <input type="radio" id="care" name="item-group" checked>
-              <label for="care">Средства для ухода</label>
-            </li>
-            <li>
-              <input type="radio" id="accessories" name="item-group">
-              <label for="accessories">Аксессуары</label>
-            </li>
-          </ul>
-          <button class="btn" type="submit">Показать</button>
-        </form>
-      </aside>
+		<div class="catalog-content clearfix">
+			<aside>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<fieldset>
+						<legend>Производители</legend>
+						<ul class="sidebar">
+							<li>
+								<input type="checkbox" id="baxter" name="producer" checked>
+								<label for="baxter">Baxter of California</label>
+							</li>
+							<li>
+								<input type="checkbox" id="natty" name="producer">
+								<label for="natty">Mr Natty</label>
+							</li>
+							<li>
+								<input type="checkbox" id="suavecito" name="producer" checked>
+								<label for="suavecito">Suavecito</label>
+							</li>
+							<li>
+								<input type="checkbox" id="malin" name="producer">
+								<label for="malin">Malin+Goetz</label>
+							</li>
+							<li>
+								<input type="checkbox" id="murray" name="producer">
+								<label for="murray">Murray's</label>
+							</li>
+							<li>
+								<input type="checkbox" id="american" name="producer" checked>
+								<label for="american">American Crew</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Группы товаров</legend>
+						<ul class="sidebar">
+							<li>
+								<input type="radio" id="razor" name="item-group">
+								<label for="razor">Бритвенные принадлежности</label>
+							</li>
+							<li>
+								<input type="radio" id="care" name="item-group" checked>
+								<label for="care">Средства для ухода</label>
+							</li>
+							<li>
+								<input type="radio" id="accessories" name="item-group">
+								<label for="accessories">Аксессуары</label>
+							</li>
+						</ul>
+						<button class="btn" type="submit">Показать</button>
+					</fieldset>
+				</form>
+			</aside>
 
-      <section class="items">
-        <article class="item-catalog">
-          <figure>
-            <img src="img/item-1.jpg" alt="Набор для путешествий &#171;BAXTER OF CALIFORNIA&#187;" width="220" height="166">
-          </figure>
-          <p>Набор для путешествий<br>
-            &#171;BAXTER OF CALIFORNIA&#187;</p>
-          <div class="item-price">
-            2 900 РУБ.
-          </div>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="item-catalog">
-          <figure>
-            <img src="img/item-2.jpg" alt="Увлажняющий кондиционер &#171;BAXTER OF CALIFORNIA&#187;" width="220" height="166">
-          </figure>
-          <p>Увлажняющий кондиционер<br>
-            &#171;BAXTER OF CALIFORNIA&#187;</p>
-          <div class="item-price">
-            750 РУБ.
-          </div>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="item-catalog">
-          <figure>
-            <img src="img/item-3.jpg" alt="Гель для волос &#171;SUAVECITO&#187;" width="220" height="166">
-          </figure>
-          <p>Гель для волос<br>
-            &#171;SUAVECITO&#187;</p>
-          <div class="item-price">
-            290 РУБ.
-          </div>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="item-catalog">
-          <figure>
-            <img src="img/item-4.jpg" alt="Глина для укладки волос &#171;AMERICAN CREW&#187;" width="220" height="166">
-          </figure>
-          <p>Глина для укладки волос<br>
-            &#171;AMERICAN CREW&#187;</p>
-          <div class="item-price">
-            500 РУБ.
-          </div>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="item-catalog">
-          <figure>
-            <img src="img/item-5.jpg" alt="Гель для волос &#171;AMERICAN CREW&#187;" width="220" height="166">
-          </figure>
-          <p>Гель для волос<br>
-            &#171;AMERICAN CREW&#187;</p>
-          <div class="item-price">
-            300 РУБ.
-          </div>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="item-catalog">
-          <figure>
-            <img src="img/item-6.jpg" alt="Набор для бритья &#171;BAXTER OF CALIFORNIA&#187;" width="220" height="166">
-          </figure>
-          <p>Набор для бритья<br>
-            &#171;BAXTER OF CALIFORNIA&#187;</p>
-          <div class="item-price">
-            3 900 РУБ.
-          </div>
-          <a class="btn" href="#">Купить</a>
-        </article>
-      </section>
+			<section class="items">
+				<article class="item-catalog">
+					<figure>
+						<img src="img/item-1.jpg" alt="Набор для путешествий &#171;BAXTER OF CALIFORNIA&#187;" width="220" height="166">
+					</figure>
+					<p>Набор для путешествий<br>
+						&#171;BAXTER OF CALIFORNIA&#187;</p>
+						<div class="item-price">
+							2 900 РУБ.
+						</div>
+						<a class="btn" href="#">Купить</a>
+					</article>
+					<article class="item-catalog">
+						<figure>
+							<img src="img/item-2.jpg" alt="Увлажняющий кондиционер &#171;BAXTER OF CALIFORNIA&#187;" width="220" height="166">
+						</figure>
+						<p>Увлажняющий кондиционер<br>
+							&#171;BAXTER OF CALIFORNIA&#187;</p>
+							<div class="item-price">
+								750 РУБ.
+							</div>
+							<a class="btn" href="#">Купить</a>
+						</article>
+						<article class="item-catalog">
+							<figure>
+								<img src="img/item-3.jpg" alt="Гель для волос &#171;SUAVECITO&#187;" width="220" height="166">
+							</figure>
+							<p>Гель для волос<br>
+								&#171;SUAVECITO&#187;</p>
+								<div class="item-price">
+									290 РУБ.
+								</div>
+								<a class="btn" href="#">Купить</a>
+							</article>
+							<article class="item-catalog">
+								<figure>
+									<img src="img/item-4.jpg" alt="Глина для укладки волос &#171;AMERICAN CREW&#187;" width="220" height="166">
+								</figure>
+								<p>Глина для укладки волос<br>
+									&#171;AMERICAN CREW&#187;</p>
+									<div class="item-price">
+										500 РУБ.
+									</div>
+									<a class="btn" href="#">Купить</a>
+								</article>
+								<article class="item-catalog">
+									<figure>
+										<img src="img/item-5.jpg" alt="Гель для волос &#171;AMERICAN CREW&#187;" width="220" height="166">
+									</figure>
+									<p>Гель для волос<br>
+										&#171;AMERICAN CREW&#187;</p>
+										<div class="item-price">
+											300 РУБ.
+										</div>
+										<a class="btn" href="#">Купить</a>
+									</article>
+									<article class="item-catalog">
+										<figure>
+											<img src="img/item-6.jpg" alt="Набор для бритья &#171;BAXTER OF CALIFORNIA&#187;" width="220" height="166">
+										</figure>
+										<p>Набор для бритья<br>
+											&#171;BAXTER OF CALIFORNIA&#187;</p>
+											<div class="item-price">
+												3 900 РУБ.
+											</div>
+											<a class="btn" href="#">Купить</a>
+										</article>
+									</section>
+								</div>
 
-        <ul class="pagination">
-          <li>
-            <a class="btn" href="#">1</a>
-          </li>
-          <li>
-            <span class="active-btn-pagination">2</span>
-          </li>
-          <li>
-            <a class="btn" href="#">3</a>
-          </li>
-          <li>
-            <a class="btn" href="#">4</a>
-          </li>
-        </ul>
+								<ul class="pagination">
+									<li>
+										<a class="btn" href="#">1</a>
+									</li>
+									<li>
+										<span class="active-btn-pagination">2</span>
+									</li>
+									<li>
+										<a class="btn" href="#">3</a>
+									</li>
+									<li>
+										<a class="btn" href="#">4</a>
+									</li>
+								</ul>
+							</main>
 
-      <footer class="main-footer">
-        <div class="container">
-          <div class="footer-contacts">
-            <p>Барбершоп &#171;Бородинский&#187;<br>
-            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-            <a href="#">Как нас найти?</a><br>
-            Телефон: +7(495)666-02-66</p>
-          </div>
-          <div class="footer-social">
-            <p>Давайте дружить!</p>
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          </div>
-          <div class="footer-copyright">
-            <p>Разработано:</p>
-            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-          </div>
-        </div>
-      </footer>
+							<footer class="main-footer">
+								<div class="container clearfix">
+									<div class="footer-contacts">
+										<p>Барбершоп &#171;Бородинский&#187;<br>
+											Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+											<a href="#">Как нас найти?</a><br>
+											Телефон: +7(495)666-02-66</p>
+										</div>
+										<div class="footer-social">
+											<p>Давайте дружить!</p>
+											<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+											<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+											<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+										</div>
+										<div class="footer-copyright">
+											<p>Разработано:</p>
+											<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+										</div>
+									</div>
+								</footer>
 
-    </main>
-
-  </body>
-</html>
+							</body>
+							</html>

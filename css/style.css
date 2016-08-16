@@ -3,34 +3,34 @@
  margin: 0;
 }
 
-body{
+body {
   font-size: 14px;
   line-height: 24px;
   color: #000000;
   font-family: PT Sans Narrow, Helvetica, Arial;
 }
 
-h1{
+h1 {
   font-size: 30px;
   line-height: 42px;
 }
 
-h2{
+h2 {
   font-size: 14px;
   line-height: 18px;
 }
 
-.main-header{
+.main-header {
   margin-bottom: 50px;
 }
 
-.container{
+.container {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.page-logo{
+.page-logo {
   float: left;
   margin-right: 20px;
   width: 140px;
@@ -38,17 +38,16 @@ h2{
 
 .main-navigation {
   float: left;
-  width: 620px;
 }
 
-.main-navigation li{
+.main-navigation li {
   display: inline-block;
+	vertical-align: top;
   list-style: none;
 }
 
 .user-block {
   float: right;
-  width: 140px;
 }
 
 .clearfix::after {
@@ -57,92 +56,94 @@ h2{
   clear: both;
 }
 
-.page-header{
+.page-header {
   width: 940px;
   margin-bottom: 40px;
 }
 
-.breadcrumbs li{
+.breadcrumbs li {
   display: inline-block;
+	vertical-align: top;
   list-style: none;
 }
 
-aside{
+aside {
   float: left;
   width: 220px;
 }
-.sidebar li{
+.sidebar li {
   list-style: none;
 }
 
-.items{
+.items {
     float: right;
     width: 700px;
     margin-bottom: 45px;
 }
 
-.item-catalog{
-  display: inline-block;
+.item-catalog {
+  float: left;
   width: 220px;
-  margin-right: 15px; /* По макету отступ 20px, не поняла куда делись 5px. */
+  margin-right: 20px;
 }
 
-.item-catalog:nth-child(3n+3){
+.item-catalog:nth-child(3n+3) {
   margin-right: 0;
 }
 
-.pagination{
+.pagination {
   margin-left: 240px;
 }
 
 .pagination li{
   display: inline-block;
+	vertical-align: top;
   list-style: none;
 }
 
-.main-footer{
+.main-footer {
   margin-top: 49px;
 }
 
-.footer-contacts{
+.footer-contacts {
   float: left;
   width: 320px;
   margin-right: 60px;
 }
 
-.footer-social{
+.footer-social {
   float: left;
-  width: 320px;
+  width: 160px;
 }
 
-.footer-copyright{
+.footer-copyright {
   float: right;
   width: 160px;
 }
 
 /*--- Страница товара ---*/
 
-.item-photos{
+.item-photos {
 	float: left;
 	width: 460px;
 }
 
-.item-preview li{
-	display: inline-block;
+.item-preview li {
+	float: left;
 	list-style: none;
-	margin-right: 15px; /* По макету отступ 20px, не поняла куда делись 5px.Опять */
+	margin-right: 20px;
 }
 
-.item-preview li:last-child{
+.item-preview li:last-child {
 	margin-right: 0;
 }
 
 .item-description,
-.item-set{
+.item-set {
 	float: right;
 	width: 400px;
 }
 
-.item-description{
+.item-description {
 	margin-bottom: 55px;
 }

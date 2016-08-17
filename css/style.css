@@ -57,7 +57,6 @@ h2 {
 }
 
 .page-header {
-  width: 940px;
   margin-bottom: 40px;
 }
 
@@ -138,8 +137,7 @@ aside {
 	margin-right: 0;
 }
 
-.item-description,
-.item-set {
+.item-column {
 	float: right;
 	width: 400px;
 }

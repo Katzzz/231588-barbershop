@@ -14,7 +14,7 @@ body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
 	text-transform: uppercase;
 
-	background:url("img/page-body-bg.jpg") no-repeat center top;
+	background: #f9f6f3 url("../img/page-body-bg.jpg") no-repeat center top;
 }
 
 h1 {
@@ -23,8 +23,8 @@ h1 {
 }
 
 h2 {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .container {
@@ -127,7 +127,7 @@ h2 {
   text-decoration: none;
 }
 
-.login::before{
+.login::before {
 	content: '';
 	position:absolute;
 	top: 28px;
@@ -137,31 +137,219 @@ h2 {
  	height: 18px;
 
 	background: url("../img/sprite.png") no-repeat;
-	background-position: -5px -37px;
+	background-position: -10px -52px;
 	opacity: 0.3;
+}
+
+.login:hover::before {
+  opacity: 1;
 }
 
 .login:hover {
   background-color: #242424;
 }
 
+/* Меню страницы каталога */
+
 .page-header {
   margin-bottom: 40px;
+
+  line-height: 20px;
+}
+
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .breadcrumbs li {
+  position: relative;
   display: inline-block;
+  margin-right: 30px;
+
 	vertical-align: top;
-  list-style: none;
 }
+
+.breadcrumbs a {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs a::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -20px;
+
+  display: block;
+  width: 7px;
+  height: 7px;
+
+  background-color: #000;
+  transform: rotate(45deg);
+
+  cursor: none;
+}
+
+.active-btn-breadcrumbs {
+  color: #aba9a7;
+}
+
+/* Боковой фильтер каталога */
 
 aside {
   float: left;
   width: 220px;
 }
-.sidebar li {
+
+legend {
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+  color: inherit;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+fieldset ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+
   list-style: none;
 }
+
+fieldset li {
+  margin-bottom: 15px;
+}
+
+label {
+  padding-right: 40px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+
+  margin: 10px 0;
+  padding-left: 40px;
+
+  font-size: inherit;
+  line-height: 20px;
+
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: '';
+  left: 0;
+  top: 0;
+
+  position: absolute;
+  transform: translateY(-10%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: '';
+  top: 3px;
+  left: 4px;
+
+  position: absolute;
+  transform: translateY(-10%);
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px -88px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+
+  margin: 10px 0;
+  padding-left: 40px;
+
+  font-size: inherit;
+  line-height: 18px;
+}
+
+input[type="radio"] + label::before {
+  content: '';
+  left: 0;
+  top: 0;
+
+  position: absolute;
+  transform: translateY(-10%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 6px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000;
+  border-radius: 50%;
+
+}
+
+/* Стандартная кнопка */
+
+.btn {
+  display: inline-block;
+  /*margin-right: 16px;*/
+  padding: 10px 33px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+
+/* Каталог */
 
 .items {
     float: right;
@@ -179,6 +367,8 @@ aside {
   margin-right: 0;
 }
 
+/* Пагинация страницы каталог*/
+
 .pagination {
   margin-left: 240px;
 }
@@ -189,24 +379,110 @@ aside {
   list-style: none;
 }
 
+/* Подвал сайта */
+
 .main-footer {
-  margin-top: 49px;
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  color: #ffffff; /* лучше явно прописать везде для футера */
+
+  background: #252525 url("../img/pattern-black.jpg");
 }
 
 .footer-contacts {
   float: left;
   width: 320px;
   margin-right: 60px;
+  
+}
+
+.footer-contacts a {
+  color: #ffffff;
+}
+
+.footer-contacts a:hover {
+  text-decoration: none;
 }
 
 .footer-social {
   float: left;
-  width: 160px;
+  width: 180px;
+
+  text-align: center;
 }
 
 .footer-copyright {
   float: right;
-  width: 160px;
+  max-width: 180px;
+}
+
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+
+  background: #000000 url("../img/sprite.png") no-repeat center;
+
+  transition:
+    background-position 0.5s,
+    background-color 0.5s;
+}
+
+.social-btn:hover {
+  background-color: #ffffff;
+}
+
+.social-btn-vk {
+  background-position: -10px -161px;
+}
+
+.social-btn-fb {
+  background-position: -10px -10px;
+}
+
+.social-btn-inst {
+  background-position: -10px -120px;
+}
+
+.social-btn-vk:hover {
+  background-position: 9px -381px;
+}
+
+.social-btn-fb:hover {
+  background-position: 15px -100px;
+}
+
+.social-btn-inst:hover {
+  background-position: 12px -242px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.footer-copyright .btn {
+  margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 /*--- Страница товара ---*/
@@ -238,7 +514,7 @@ aside {
 /*  SPRITE */
 
 .sprite {
-    background-image: url(../img/spritesheet.png);
+    background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -246,23 +522,29 @@ aside {
 .sprite-fb {
     width: 12px;
     height: 22px;
-    background-position: -5px -5px;
+    background-position: -10px -10px;
 }
 
 .sprite-icon-login {
     width: 18px;
     height: 16px;
-    background-position: -5px -37px;
+    background-position: -10px -52px;
+}
+
+.sprite-input-checked {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -88px;
 }
 
 .sprite-insta {
     width: 21px;
     height: 21px;
-    background-position: -5px -63px;
+    background-position: -10px -120px;
 }
 
 .sprite-vk {
     width: 25px;
     height: 16px;
-    background-position: -5px -94px;
+    background-position: -10px -161px;
 }

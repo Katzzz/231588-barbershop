@@ -61,7 +61,7 @@ h2 {
 
 .main-navigation a {
 	display: block;
-	padding: 25px 20px;
+	padding: 27px 20px;
 
   color: #ffffff;
   text-decoration: none;
@@ -71,25 +71,24 @@ h2 {
   background: #242424;
 }
 
-.active-btn-nav {
+.main-navigation .active{
 	position: relative;
-	display: block;
-	padding: 25px 20px;
-
-  color: #ffffff;
 }
 
-.active-btn-nav:after {
+.main-navigation .active::after {
 	content:'';
 	position: absolute;
 	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 20px;
+	right: 20px;
 
-	width: 56px;
-	height: 4px;
+	height: 5px;
 
 	background-color: #fff;
+}
+
+.main-navigation .active a:hover {
+  background: none;
 }
 
 .main-navigation ul {
@@ -117,7 +116,7 @@ h2 {
 	position:relative;
 
 	display: inline-block;
-	padding: 25px 20px;
+	padding: 27px 20px;
 	padding-left: 50px;
 
   font-size: 16px;

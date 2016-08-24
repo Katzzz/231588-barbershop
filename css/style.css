@@ -96,6 +96,7 @@ h2 {
   padding: 0;
 
 	font-size: 0;
+  font-weight: 400;
   list-style: none;
 }
 
@@ -136,7 +137,7 @@ h2 {
  	height: 18px;
 
 	background: url("../img/icons.png") no-repeat;
-	background-position: -5px -5px;
+	background-position: -5px -3px;
 	opacity: 0.3;
 }
 
@@ -151,7 +152,7 @@ h2 {
 /* Меню страницы каталога */
 
 .page-header {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 
   line-height: 20px;
 }
@@ -166,12 +167,13 @@ h2 {
 .breadcrumbs li {
   position: relative;
   display: inline-block;
-  margin-right: 30px;
 
 	vertical-align: top;
 }
 
 .breadcrumbs a {
+  padding-right: 40px;
+
   font-size: inherit;
   font-family: inherit;
   color: inherit;
@@ -182,7 +184,7 @@ h2 {
   content: '';
   position: absolute;
   top: 5px;
-  right: -20px;
+  right: 15px;
 
   display: block;
   width: 7px;
@@ -191,7 +193,7 @@ h2 {
   background-color: #000;
   transform: rotate(45deg);
 
-  cursor: none;
+  cursor: default;
 }
 
 .active-btn-breadcrumbs {
@@ -206,7 +208,7 @@ aside {
 }
 
 legend {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-size: 24px;
   line-height: 30px;
@@ -215,6 +217,7 @@ legend {
 
 fieldset {
   padding: 0;
+  padding-bottom: 20px;
   border: 0;
 }
 
@@ -308,6 +311,13 @@ input[type="radio"] + label::before {
   border-radius: 50%;
 }
 
+input[type="checkbox"]:disabled + label::before,
+input[type="radio"]:disabled + label::before,
+input[type="checkbox"]:disabled + label::after,
+input[type="radio"]:disabled + label::after {
+  border-color: #afadab;
+}
+
 input[type="radio"]:checked + label::after {
   content: '';
   position: absolute;
@@ -319,7 +329,21 @@ input[type="radio"]:checked + label::after {
 
   background-color: #000;
   border-radius: 50%;
+}
 
+input[type="radio"] + label:hover,
+input[type="checkbox"] + label:hover {
+  color: #663d15;
+}
+
+input[type="radio"]:disabled + label,
+input[type="radio"]:disabled + label {
+  color: #afadab;
+  cursor: default;
+}
+
+.btn-filter {
+  margin-top: 30px;
 }
 
 /* Стандартная кнопка */
@@ -355,7 +379,7 @@ input[type="radio"]:checked + label::after {
 .items {
     float: right;
     width: 700px;
-    margin-bottom: 45px;
+    margin-bottom: 12px;
 }
 
 .item-catalog {
@@ -371,10 +395,11 @@ input[type="radio"]:checked + label::after {
 article {
   background-color: #fff;
   margin-bottom: 20px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 article .item-info {
-  margin: 15px 15px;
+  margin: 19px 15px;
 }
 
 article .item-category {
@@ -413,6 +438,8 @@ article .item-name {
 
 figure {
   margin: 0;
+  width: 220px;
+  height: 160px;
 }
 
 /* Пагинация страницы каталог*/
@@ -481,7 +508,8 @@ figure {
 }
 
 .item-description {
-	margin-bottom: 55px;
+	margin-bottom: 60px;
+  margin-top: 20px;
   padding-right: 10px;
 
   line-height: 24px;
@@ -563,17 +591,18 @@ figure {
   background-color: #000;
   transform: rotate(45deg);
 
-  cursor: none;
+  cursor: default;
 }
 
 /* Подвал сайта */
 
 .main-footer {
-  margin-top: 65px;
-  padding-top: 60px;
+  margin-top: 45px;
+  padding-top: 55px;
   padding-bottom: 40px;
 
   color: #ffffff;
+  line-height: 24px;
 
   background: #252525 url("../img/pattern-black.jpg");
   box-shadow: inset 0 20px 20px #000;
